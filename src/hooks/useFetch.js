@@ -30,7 +30,10 @@ export function useFetch(fetchFn, initialValue){
   // return state by grouping it into an array or obj
   return {
     isFetching,
+    setIsFetching,
     fetchedData,
-    error
+    setFetchedData,
+    error,
+    setError
   }
 }
